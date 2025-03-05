@@ -6,7 +6,7 @@
     <meta name="description" content="PhD candidate in computer science at Harvard University.">
     <meta name="author" content="Anastasiya Kravchuk-Kirilyuk">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="anastasiya,kravchuk,kirilyuk,akravc,coq" />
+    <meta name="keywords" content="anastasiya,kravchuk,kirilyuk,akravc" />
     <base target="_blank">
     <style>
       * {
@@ -31,14 +31,15 @@
       .subtitle {
         margin-top: 6pt;
         max-width: 550pt;
-        font-size: 15pt;
-        color: #857769
+        font-size: 14pt;
+        color: #85827e
       }
       .subsubtitle {
-        margin-top: 6pt;
+        margin-top: 25pt;
         max-width: 550pt;
         font-size: 12pt;
-        color: #857769
+        color: #383737;
+        line-height: 1.3
       }
 
       .content {
@@ -53,9 +54,9 @@
         font-weight: initial;
         vertical-align: middle;
         text-transform: uppercase;
-        color: #857769;
-        width: 200pt;
-        font-size: 9pt;
+        /*color: #857769;*/
+        width: 300pt;
+        font-size: 10pt;
         letter-spacing: 3.06px;
         line-height: 12pt;
         margin-bottom: 5pt;
@@ -65,10 +66,15 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
+        width: 650pt;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 1.3;
       }
       section li {
         font-size: 12pt;
-        margin-bottom: 6pt
+        margin-bottom: 6pt;
+        color: #85827e
       }
 
       a {
@@ -82,11 +88,12 @@
       }
 
       img.photo {
-          max-width: 15%;
-          max-height: 15%;
+          max-width: 20%;
+          max-height: 20%;
           float: right;
           margin: 0 0 5px 5px;
           border-radius: 50%;
+          border: 2px #85827e solid;
       }
 
       @media(max-width:600pt) {
@@ -108,16 +115,18 @@
         Anastasiya Kravchuk-Kirilyuk
       </div>
       <div class="subtitle">
-        Ph.D. candidate in computer science at Harvard University.
+        Ph.D. candidate in computer science at Harvard University
       </div>
       <div class="subsubtitle">
         <p>
         I'm a fifth year student in the Programming Languages lab, advised by <a href="https://namin.seas.harvard.edu/people/nada-amin">Nada Amin</a>.
         </p>
         <p>
-        My research interests include type systems, formal verification, and computer science education. 
+          My current research projects span the areas of proof systems, modular / extensible verification, proof synthesis tools, and computer science education. I have also spent the past two summers as an intern with the automated reasoning group at AWS. 
         </p>
-
+        <p>
+          In my free time, I like to hike (the hike must be scenic, and there must be snacks), explore random small towns with my husband, or chill out at home with my cats.
+        </p>
         <p>
         You can reach me at <a href="mailto:akravchukkirilyuk@g.harvard.edu">this email</a>.
         </p>
@@ -125,27 +134,39 @@
     </div>
     <div class="content">
         <section>
-          <h1>Papers and Workshop Talks</h1>
+          <h1>Published Papers</h1>
           <ul>
           <li>
-            <a href="https://dl.acm.org/doi/10.1145/3649836">Persimmon: Nested Family Polymorphism with Extensible Variant Types</a>.
+            <a href="https://dl.acm.org/doi/10.1145/3649836">Persimmon: Nested Family Polymorphism with Extensible Variant Types</a>.<br>
             Anastasiya Kravchuk-Kirilyuk, Gary Feng, Jonas Iskander, Yizhou Zhang, Nada Amin. <a href="https://2024.splashcon.org/details/splash-2024-oopsla/26/Persimmon-Nested-Family-Polymorphism-with-Extensible-Variant-Types">SPLASH OOPSLA 2024</a>.
           </li>
           <li>
-              <a href="https://types21.liacs.nl/download/family-polymorphism-for-proof-extensibility/">Family Polymorphism for Proof Extensibility</a>.
+            <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=13071">Eta-Equivalence in Core Dependent Haskell</a>.<br>
+            Anastasiya Kravchuk-Kirilyuk, Antoine Voizard, Stephanie Weirich. <a href="https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16167">In post-proceedings, TYPES 2019</a> .
+          </li>
+          </ul>
+        </br>
+          <h1>Workshop Talks</h1>
+          <ul>
+          <li>
+              <a href="https://types21.liacs.nl/download/family-polymorphism-for-proof-extensibility/">Family Polymorphism for Proof Extensibility</a>.<br>
               Anastasiya Kravchuk-Kirilyuk, Yizhou Zhang, Nada Amin. <a href="https://types21.liacs.nl/">TYPES 2021</a>.
             </li>
             <li>
-              <a href="https://popl21.sigplan.org/details/CoqPL-2021-papers/4/The-B-tree-Index-as-a-Verified-Software-Unit">The B+-tree Index as a Verified Software Unit</a>.
+              <a href="https://popl21.sigplan.org/details/CoqPL-2021-papers/4/The-B-tree-Index-as-a-Verified-Software-Unit">The B+-tree Index as a Verified Software Unit</a>.<br>
               Anastasiya Kravchuk-Kirilyuk, Andrew Appel, Lennart Beringer. <a href="https://popl21.sigplan.org/home/CoqPL-2021">CoqPL 2021</a> .
             </li>
             <li>
-              <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=13071">Eta-Equivalence in Core Dependent Haskell</a>.
-              Anastasiya Kravchuk-Kirilyuk, Antoine Voizard, Stephanie Weirich. <a href="https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16167">In post-proceedings, TYPES 2019</a> .
-            </li>
-            <li>
-              <a href="https://popl18.sigplan.org/event/coqpl-2018-locally-nameless-at-scale">Locally Nameless at Scale</a>.
+              <a href="https://popl18.sigplan.org/event/coqpl-2018-locally-nameless-at-scale">Locally Nameless at Scale</a>.<br>
               Stephanie Weirich, Antoine Voizard, Anastasiya Kravchuk-Kirilyuk. <a href="https://popl18.sigplan.org/track/CoqPL-2018">CoqPL  2018</a>.
+            </li>
+          </ul>
+        </br>
+          <h1>Theses</h1>
+          <ul>
+            <li>
+              <a href="Masters_Thesis_Anastasiya_Kravchuk-Kirilyuk.pdf">The B+-tree Index as a Verified Software Unit.</a><br>
+              Anastasiya Kravchuk-Kirilyuk. Master's Thesis. Princeton University, 2020.
             </li>
           </ul>
         </section>
