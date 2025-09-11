@@ -344,6 +344,48 @@
             border-bottom-color: var(--accent-2);
         }
 
+        /* Code sample styling */
+        .code-sample-container {
+            display: inline-block;
+            margin-top: 0.6rem;
+            padding: 0.4rem 0.6rem;
+            background: rgba(47, 107, 176, 0.04);
+            border-radius: 4px;
+            border-left: 2px solid rgba(47, 107, 176, 0.15);
+        }
+
+        .code-sample-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--subtle) !important;
+            text-decoration: none !important;
+            font-size: 0.85rem;
+            font-weight: 450;
+            border-bottom: 1px solid transparent !important;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .code-sample-link:hover {
+            color: var(--accent) !important;
+            border-bottom-color: var(--accent) !important;
+        }
+
+        .code-sample-link:visited {
+            color: var(--subtle) !important;
+        }
+
+        .code-sample-link:visited:hover {
+            color: var(--accent) !important;
+            border-bottom-color: var(--accent) !important;
+        }
+
+        .code-sample-link::before {
+            content: "↗";
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+
         .footer {
             text-align: center;
             padding: 2rem 0;
@@ -466,6 +508,9 @@
                         <div class="experience-description">
                             During my Ph.D., I developed Persimmon, a family polymorphic calculus that supports extensible variant types, pattern matching, and modular code reuse through nested family polymorphism (<a href="https://dl.acm.org/doi/10.1145/3649836" target="_blank" rel="noopener">OOPSLA 2024</a>). I am currently implementing my insights from Persimmon into LLM-driven tools that synthesize verified code, exploring how AI can integrate with formal methods to guarantee correctness (<a href="https://conf.researchr.org/details/icfp-splash-2025/lmpl-2025-papers/16/The-Modular-Imperative-Rethinking-LLMs-for-Maintainable-Software" target="_blank" rel="noopener">LMPL 2025</a>). My research has been supported by an NSF Award and an Amazon Research Award, and I’ve had the privilege of sharing my work as an invited speaker at <a href="https://2024.splashcon.org/details/splash-2024-oopsla/26/Persimmon-Nested-Family-Polymorphism-with-Extensible-Variant-Types" target="_blank" rel="noopener">OOPSLA 2024</a>, <a href="https://nepls.org/Events/35/abstracts.html#c3a5821c" target="_blank" rel="noopener">NEPLS 2025</a>, and <a href="https://types21.liacs.nl/download/family-polymorphism-for-proof-extensibility/" target="_blank" rel="noopener">TYPES 2021</a>.
                         </div>
+                        <div class="code-sample-container">
+                          <a href="https://github.com/akravc/persimmon" target="_blank" rel="noopener" class="code-sample-link">Code Sample</a>
+                        </div>
                     </div>
 
                     <div class="experience-item">
@@ -474,6 +519,9 @@
                         <div class="experience-date">2018 - 2020</div>
                         <div class="experience-description">
                             During my Master’s, I focused on making data structures both reusable and verifiably correct. I designed a general API for ordered database indexes and used it to formally verify a B+-tree with cursors, ensuring safety and correctness through mechanized proofs in Rocq. I then packaged this work as a modular, formally verified C component that can be cleanly reused in larger systems. This work was recognized with an invitation to present at <a href="https://popl21.sigplan.org/details/CoqPL-2021-papers/4/The-B-tree-Index-as-a-Verified-Software-Unit" target="_blank" rel="noopener">CoqPL 2021</a>, where I shared it as a model for building verified, reusable infrastructure components.
+                        </div>
+                        <div class="code-sample-container">
+                          <a href="https://github.com/PrincetonUniversity/DeepSpecDB/tree/master/verif/indices" target="_blank" rel="noopener" class="code-sample-link">Code Sample</a>
                         </div>
                     </div>
                 </section>
